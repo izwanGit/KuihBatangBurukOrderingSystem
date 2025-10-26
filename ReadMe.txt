@@ -1,3 +1,12 @@
+# Kuih Batang Buruk Ordering System
+
+## 📚 Project Documentation & Presentation
+
+View the Poster:
+https://drive.google.com/file/d/1U2WzGAhcRIYL5nhr_DJnXVUEyIyrUJ9S/view?usp=drive_link
+
+View the Presentation:
+https://drive.google.com/file/d/12kVoQF8igs97D3uOUCIJf1LprVBQJ3hF/view?usp=sharing
 
 
 -----READ ME-----
