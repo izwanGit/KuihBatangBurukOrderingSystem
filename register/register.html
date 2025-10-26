@@ -1,0 +1,137 @@
+<html>
+<head>
+    <style>
+        body {
+            background-image: url('../img/background.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            font-family: Arial, sans-serif;
+        }
+        
+        form {
+            width: 540px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            text-align: center;
+			color: white;
+			margin-top: 68px;
+			text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        table {
+            margin-top: 20px;
+            width: 100%;
+        }
+        
+        td {
+            padding: 10px;
+        }
+        
+        input[type="text"],
+		input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+            resize: vertical;
+			height: 100px;
+			resize: none;
+        }
+        
+        input[type="submit"],
+		input[type="button"]{
+            width: 100%;
+			margin-top: 8px;
+            padding: 10px;
+            background-color: #b96d3a;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        input[type="submit"]:hover,
+		input[type="button"]:hover {
+            background-color: #c3672b;
+        }
+    </style>
+</head>
+<body>
+	<h1>REGISTER</h1>
+    <form method="post" action="register.php">
+        <table>
+            <tr>
+                <td>
+                    Username:
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter username" name="user_username" id="user_username" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Password:
+                </td>
+                <td>
+                    <input type="password" placeholder="Enter password" name="user_password" id="user_password" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name:
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter your name" name="user_name" id="user_name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Address:
+                </td>
+                <td>
+                    <textarea placeholder="Enter address" name="user_address" id="user_address" required rows="4"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Email:
+                </td>
+                <td>
+                    <input type="email" placeholder="Enter email" name="user_email" id="user_email" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Phone Number:
+                </td>
+                <td>
+                    <input type="text" placeholder="Enter phone no" name="user_phoneno" id="user_phoneno" required>
+                </td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+        <input type="button" value="Back" onclick="history.back()">
+    </form>
+</body>
+</html>

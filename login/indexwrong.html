@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {
+			background-image: url('../img/background.jpeg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-size: cover;
+			font-family: Arial, sans-serif;
+		}
+
+		h1 {
+			color: white;
+			text-align: center;
+			margin-top: 120px;
+      		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+    h3{
+      color: #FF2400;
+      text-align: center;
+    }
+
+    h4{
+      margin-top: -18px;
+      color: #FF2400;
+      text-align: center;
+      font-size: 12px;
+    }
+
+		form {
+			width: 300px;
+			margin: 0 auto;
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 5px;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+
+		td {
+			padding: 10px;
+			font-weight: 600;
+		}
+
+		input[type="text"],
+		input[type="password"] {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+			box-sizing: border-box;
+			margin-top: 10px;
+		}
+
+		button[type="submit"],
+		button[type="reset"] {
+			width: 100%;
+			padding: 10px;
+			background-color: #b96d3a;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			margin-bottom: 10px;
+		}
+
+		button[type="submit"]:hover,
+		button[type="reset"]:hover {
+			background-color: #c3672b;
+		}
+
+		a {
+			text-align: center;
+			display: block;
+			color: #333;
+			text-decoration: none;
+			margin-top: 10px;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+	</style>
+</head>
+<body>
+	<h1>Kuih Batang Buruk Perik Login</h1>
+	<form method="POST" action="login.php">
+		<table>
+      <h3>Data Not Found in the System</h3>
+      <h4> Wrong Password or Username.</h4>
+
+			<tr>
+				<td>
+					Username:
+				</td>
+				<td>
+					<input type="text" placeholder="Enter username" name="user_username" id="user_username" required>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Password:
+				</td>
+				<td>
+					<input type="password" placeholder="Enter password" name="user_password" id="user_password" required>
+				</td>
+			</tr>
+		</table>
+		<button type="submit" name="login">Login</button>
+		<button type="reset" name="cancel">Reset</button>
+		<br><br>
+		<a href="../register/register.html">REGISTER</a>
+	</form>
+</body>
+</html>
